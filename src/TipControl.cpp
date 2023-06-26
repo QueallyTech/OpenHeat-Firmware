@@ -126,7 +126,7 @@ int GetADC0(void)
     }
 
     //读取并平滑滤波经过运算放大器放大后的热偶ADC数据
-    uint16_t ADC_RAW = analogRead(TIP_ADC_PIN);
+    uint16_t ADC_RAW = ThermSens.readCelsius();
     uint16_t ADC;
 
     //卡尔曼滤波器

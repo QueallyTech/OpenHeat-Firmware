@@ -10,6 +10,7 @@ OneButton RButton(BUTTON_PIN, true);
 //U8G2_SSD1306_128X64_NONAME_F_HW_I2C Disp(U8G2_R0, /* reset=*/ U8X8_PIN_NONE, /* clock=*/ 22, /* data=*/21);
 U8G2_SH1106_128X64_NONAME_F_HW_I2C Disp(U8G2_R0, /* reset=*/ U8X8_PIN_NONE, /* clock=*/ 22, /* data=*/21);
 PID MyPID(&TipTemperature, &PID_Output, &PID_Setpoint, aggKp, aggKi, aggKd, DIRECT);
+MAX6675 ThermSens(18, 5, 19);
 /////////////////////////////////////////////////////////////////
 
 char* TipName = "文件系统错误：请上报";

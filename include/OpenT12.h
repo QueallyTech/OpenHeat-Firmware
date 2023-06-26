@@ -8,6 +8,7 @@
 #include <U8g2lib.h>
 #include <Ticker.h>
 #include <OneButton.h>
+#include <max6675.h>
 #include "BluetoothSerial.h"
 #include "Type.h"
 #include "MyShell.h"
@@ -110,6 +111,7 @@ extern OneButton RButton;
 //extern U8G2_SSD1306_128X64_NONAME_F_HW_I2C Disp;
 extern U8G2_SH1106_128X64_NONAME_F_HW_I2C Disp;
 extern PID MyPID;
+extern MAX6675 ThermSens;
 extern KFP KFP_Temp;
 
 extern uint8_t DEBUG_MODE;
