@@ -534,8 +534,9 @@ void System_UI(void)
             } else
             {
                 //如果温度波动足够小，则显示当前温度为设定温度
-                if (TempGap < 10) Disp.printf("%.0lf", PID_Setpoint);  //显示"假"温度(设定温度)
-                else Disp.printf("%.0lf", TipTemperature);    //显示真实温度
+                //if (TempGap < 10) Disp.printf("%.0lf", PID_Setpoint);  //显示"假"温度(设定温度)
+                //else Disp.printf("%.0lf", TipTemperature);    //显示真实温度
+                Disp.printf("%.0lf", TipTemperature);
             }
 
             Disp.setFont(u8g2_font_wqy12_t_gb2312);

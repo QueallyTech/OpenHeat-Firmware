@@ -43,7 +43,7 @@ bool UnderVoltageEvent = false;
 bool PWM_WORKY = false;
 
 uint8_t PIDMode = true;
-uint8_t Use_KFP = true;
+uint8_t Use_KFP = false;
 uint8_t PanelSettings = PANELSET_Detailed;
 uint8_t ScreenFlip = false;
 uint8_t SmoothAnimation_Flag = true;
