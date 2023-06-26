@@ -180,6 +180,7 @@ void TemperatureControlLoop(void)
 
     PID_Setpoint = constrain(PID_Setpoint, TipMinTemp, TipMaxTemp);
     //尝试访问ADC
+    delay(125);
     ADC = GetADC0();
     if (ADC != -1)
     {
