@@ -1,6 +1,7 @@
 #include "OpenT12.h"
 
-extern U8G2_SSD1306_128X64_NONAME_F_HW_I2C Disp;
+//extern U8G2_SSD1306_128X64_NONAME_F_HW_I2C Disp;
+extern U8G2_SH1106_128X64_NONAME_F_HW_I2C Disp;
 /*
 	@作用 获取数值某一位
 	@传入 数值 指定位数

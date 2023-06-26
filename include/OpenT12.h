@@ -107,7 +107,8 @@ extern char CompileTime[20];
 
 extern BluetoothSerial SerialBT;
 extern OneButton RButton;
-extern U8G2_SSD1306_128X64_NONAME_F_HW_I2C Disp;
+//extern U8G2_SSD1306_128X64_NONAME_F_HW_I2C Disp;
+extern U8G2_SH1106_128X64_NONAME_F_HW_I2C Disp;
 extern PID MyPID;
 extern KFP KFP_Temp;
 
