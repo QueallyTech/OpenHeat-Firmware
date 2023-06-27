@@ -39,12 +39,12 @@ extern uint32_t PlayTonesTimer;
 extern uint16_t PlayTonesDelayTime;
 extern uint16_t PlayTones_Schedule;
 extern TONE* MySound;
-//�ײ㺯��
+//底层函数
 void BeepInit(void);
 void SetTone(double freq);
 double GetNote(note_t note, uint8_t rp);
 void SetNote(note_t note, uint8_t rp);
-//�߲�Ӧ��
+//高层应用
 void SetSound(TONE sound[]);
 void PlaySoundLoop(void);
 uint8_t PlayTones(TONE sound[], uint16_t* Schedule);
